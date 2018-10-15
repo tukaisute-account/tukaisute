@@ -19,7 +19,7 @@ after_success:
 after_failure:
   - echo failed.
 deploy:
-  -  provider: pages
+  - provider: pages
   - skip-cleanup: true
   - github-token: "$GITHUB_TOKEN"
   - keep-history: true
