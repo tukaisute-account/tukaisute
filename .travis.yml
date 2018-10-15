@@ -4,7 +4,7 @@ rvm:
   - jruby
   - 2.0.0-p247
 before_script:
-  - ls la
+  - ls -la
   - eval `ssh-agent -s`
   - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - chmod 600 ~/.ssh/config
