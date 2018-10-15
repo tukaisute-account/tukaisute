@@ -13,6 +13,10 @@ before_script:
   - chmod 600 ~/.ssh/travis_key 
   - ssh-add ~/.ssh/travis_key
 script:
+  - git fetch git@github.com:tukaisute-account/tukaisute.git
+  - git branch -a
+  - git checkout master
+  - git checkout -b develop
   - echo hoge > hoge.txt
 after_success:
   - echo success.
@@ -24,4 +28,4 @@ deploy:
   github-token: "$GITHUB_TOKEN"
   keep-history: true
   on:
-    branch: develop
+    branch: master
