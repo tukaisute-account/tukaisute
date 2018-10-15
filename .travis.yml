@@ -30,3 +30,5 @@ deploy:
   keep-history: true
   on:
     branch: master
+notifications:
+  slack: humanscience-ds:bKpIKhcfWAAAugmKF5t7AF4B
